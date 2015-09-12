@@ -1,0 +1,40 @@
+README
+
+This is a C++ program for simulating inventory systems of perishable products.
+
+File list
+---------
+README
+Makefile
+eventlist.h
+eventlist.cpp
+pis.h
+pis.cpp
+main.cpp
+Parameters.txt
+
+Program can be built using default make arguments.
+
+How to Run:
+./pissim Parameters.txt 
+
+Output list
+-----------
+(N is the number of runs)
+Backlogs1.txt - BacklogsN.txt
+Demands1.txt - DemandsN.txt
+Disposals1.txt - DisposalsN.txt
+Inventories1.txt - InventoriesN.txt
+Orders1.txt - OrdersN.txt
+Sales1.txt - SalesN.txt
+Results.txt
+
+The parameters for the simulation are passed in through Parameters.txt, which has the following parameters and default values.
+Simulation Length:10000        The length of each run of the simulation
+Expiration Time:10             The time it takes for a unit of product to expire from the time it arrives at the inventory system
+Arrival Rate:2                 The arrival rate of demands, which is a Poisson process
+Lead Time:5                    The lead time of orders to suppliers
+Starting Inventory:100         The initial inventory level of the inventory system, which is also the base stock level
+Number of Runs:2               The number of simulation runs
+Rationing Type:1               The type of rationing policy. 1-FIFO, 2-FILO, 3-Random
+Ordering Type:1                The type of ordering policy. 1-Base stock, 2-Base stock with consideration for future disposals

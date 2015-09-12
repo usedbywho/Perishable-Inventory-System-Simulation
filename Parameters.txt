@@ -1,0 +1,8 @@
+Simulation Length:10000
+Expiration Time:10
+Arrival Rate:2
+Lead Time:5
+Starting Inventory:100
+Number of Runs:2
+Rationing Type:1
+Ordering Type:1
